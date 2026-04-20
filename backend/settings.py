@@ -158,21 +158,21 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # =========================
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
-    "http://10.0.2.2:8000",
+    "https://your-frontend.onrender.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:5173",
-    "http://10.0.2.2:8000",
+    "https://your-frontend.onrender.com",
 ]
 
-SESSION_COOKIE_SECURE = False
-CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_HTTPONLY = True
-CSRF_COOKIE_SAMESITE = 'Lax'
-SESSION_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'
 
 
 # =========================
