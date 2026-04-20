@@ -16,14 +16,3 @@ def home(request):
         "admin": "/admin/"
     })
 
-urlpatterns = [
-    path('', home),
-    path('admin/', admin.site.urls),
-
-    # ✅ Only include if exists
-    path('api/', include('api.urls')),  
-    path('login/', include('Login.urls')),
-    path('training/', include('Training.urls')),
-    path('certificate/', include('Certificate.urls')),
-    path('enrollment/', include('Enrollment.urls')),
-]
