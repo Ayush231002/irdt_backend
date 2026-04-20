@@ -1,14 +1,5 @@
-from django.contrib import admin
-from django.urls import path, include
-from django.http import JsonResponse
-from .views import create_admin
-
-# ✅ Root URL
-def home(request):
-    return JsonResponse({
-        "status": "Backend running",
-        "admin": "/admin/"
-    })
+from django.urls import path
+from .views import *
 
 urlpatterns = [
     path('', home),
